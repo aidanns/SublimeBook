@@ -3,30 +3,66 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
     <title>SublimeBook by aidanns</title>
 
     <link rel="stylesheet" href="stylesheets/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheets/custom.css">
+
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     
+    <script src="javascripts/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="javascripts/script.js" type="text/javascript" charset="utf-8"></script>
+    
+
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
   
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>SublimeBook</h1>
-        <p>Open source Facebook plugin for Sublime Text 2 allowing you to post from within the editor.</p>
-        <p class="view"><a href="https://github.com/aidanns/SublimeBook">View the Project on GitHub <small>aidanns/SublimeBook</small></a></p>
-      </header>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/aidanns">aidanns</a></p>
-        <p><small>Hosted on GitHub Pages</small></p>
-      </footer>
-    </div>
 
-    <script src="javascripts/script.js"></script>
-    
+    <!-- Github ribbon -->
+    <a href="https://github.com/aidanns/SublimeBook">
+      <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+    </a>
+
+    <div class="container">
+
+      <div class="row">
+        <div class="span12 centered-text">
+          <h1>SublimeBook</h1>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="span12 centered-text">
+          <p>Open source Facebook plugin for <a href="http://www.sublimetext.com/2">Sublime Text 2</a> allowing you to post from within the editor.</p>
+        </div>
+      </div>
+
+      <div id="error-block" class="hidden">
+        <div class="row">
+          <div class="span12 centered-text">
+            <p>You'll need to authorize SublimeBook if you want to use it to post to Facebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div id="auth-block" class="hidden">
+        <div class="row">
+          <div class="span12 centered-text">
+            <p>Enter the following code in to Sublime Text to allow posting to Facebook.</p>
+          </div>
+        </div>
+
+         <div class="row">
+          <div class="span12 centered-text">
+            <p id="code-text" class="big-bold-text"></p>
+          </div>
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>

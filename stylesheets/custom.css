@@ -1,0 +1,28 @@
+h1 {
+	font-size: 90px;
+	line-height: 118px;
+	padding-top: 60px;
+	padding-bottom:20px;
+}
+
+.big-bold-text {
+	font-size: 60px;
+	line-height:72px;
+	font-weight: bold;
+}
+
+.centered-text {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+#auth-block {
+	padding-top: 60px;
+}
+
+#error-block {
+	padding-top: 60px;
+}
